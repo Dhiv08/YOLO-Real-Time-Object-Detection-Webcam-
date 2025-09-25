@@ -5,7 +5,6 @@ This project gives you **two ways** to run real‑time YOLO detection from your 
 1) **CLI (OpenCV window)** — easiest for local use  
 2) **Streamlit Web App** — run in the browser with `streamlit-webrtc`
 
-It uses [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics) and works on CPU or GPU (CUDA).
 
 ---
 
@@ -62,13 +61,3 @@ python app.py --weights runs/detect/train/weights/best.pt
 - `requirements.txt` — Dependencies
 - `README.md` — This file
 
----
-
-## Tips
-
-- **Performance**: Use `yolov8n.pt` for speed; switch to `yolov8s.pt` / `m.pt` for accuracy.  
-- **GPU**: If you have CUDA, PyTorch will pick it up automatically once installed.  
-- **Save video**: Use `--save out.mp4` on the CLI app to write annotated video.  
-- **Tracking**: For simple tracking IDs, use `--track` in the CLI app.
-
-Happy building! 🚀
